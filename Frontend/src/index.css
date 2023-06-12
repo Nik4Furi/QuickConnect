@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Sofia+Sans:ital,wght@0,200;0,400;1,200&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* We are set our root variables, can use as less code and reuse more than time  */
+:root{
+  --main-col : 	#832D83;
+  --main-col-hover : 	#5d1a5d;
+  --main-bg-primary:#fffaff;
+  --main-bg-secondary: #d2c4d2;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Sofia Sans', sans-serif;
+  
+}
+/* body{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+} */
+
+/* Text Specific Stuff  */
+.text-highlight,.navs-highlight{
+  font-weight: bold;
+  color: var(--main-col);
+  font-family: 'Roboto', sans-serif;
+}
+.navs-highlight:hover{
+  color: var(--main-col-hover);
+}
+
+.f-1{ /* Use this, for primary fonts on texts*/
+  font-family: 'Roboto', sans-serif;
+}
+.f-2{  /* Use this, for secondary fonts on texts*/
+  font-family: 'Sofia Sans', sans-serif;
+
+}
+
+/* Buttons and Background Specifix Stuff  */
+.btn-primary{
+  background: var(--main-col) !important;
+  border:  none !important;
+}
+.btn-primary:hover{
+  background: var(--main-col-hover) !important;
+  border:  none !important;
+}
+.bg-primary{ /*Used as secondary background color, and main buttons colors*/
+  background: var(--main-bg-primary) !important;
+}
+.bg-secondary{ /*Used as secondary background color*/
+  background: var(--main-bg-secondary) !important;
+}
